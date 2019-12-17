@@ -61,6 +61,7 @@ export default {
     theme: 'テーマ変更',
     clipboard: 'Clipboard',
     i18n: '多言語',
+    Files: '文件',
     externalLink: '外部リンク',
     profile: 'プロフィール'
   },

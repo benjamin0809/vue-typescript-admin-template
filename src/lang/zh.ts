@@ -61,6 +61,7 @@ export default {
     theme: '换肤',
     clipboard: '粘贴板',
     i18n: '国际化',
+    Files: '文件',
     externalLink: '外链',
     profile: '个人中心'
   },

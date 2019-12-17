@@ -61,6 +61,7 @@ export default {
     theme: 'Theme',
     clipboard: 'Clipboard',
     i18n: 'I18n',
+    Files: 'Files',
     externalLink: 'External Link',
     profile: 'Profile'
   },

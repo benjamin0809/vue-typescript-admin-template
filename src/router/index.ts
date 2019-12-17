@@ -426,6 +426,21 @@ export const asyncRoutes: RouteConfig[] = [
     ]
   },
   {
+    path: '/file',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        component: () => import(/* webpackChunkName: "i18n-demo" */ '@/views/files/index.vue'),
+        name: 'File',
+        meta: {
+          title: 'Files',
+          icon: 'file'
+        }
+      }
+    ]
+  },
+  {
     path: 'external-link',
     component: Layout,
     children: [
