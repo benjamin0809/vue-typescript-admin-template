@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseURL = location.host != "localhost" ? 'http://www.popochiu.com/' : 'http://localhost/' 
+export const baseURL = ~location.host.indexOf('localhost') ? 'http://localhost/' : 'http://www.popochiu.com/' ;
 const token = localStorage.getItem('token') ;
 const instance = axios.create({
   baseURL: baseURL,
@@ -31,3 +31,9 @@ export const fetchFiles = (queryCondi: any) => {
 export const removeFile = (id: number) => {
   return request('file/removeFileById', { id });
 }
+
+export const getFileType = () => {
+  return request('file/getFileType', {});
+}
+
+
